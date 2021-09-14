@@ -1,0 +1,212 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    color: #fff;
+}
+nav .navbar-brand{
+    font-weight: bold;
+    border-left: 2px solid #fff;
+    padding-left: 2% !important;
+}
+.nav-item .nav-link:hover{
+    color: #717172 !important;
+}
+
+/* showcase */
+.showcase{
+    padding: 10rem;
+    background: linear-gradient(to bottom, rgba(251, 64, 210, 0.3)0%, rgba(200, 25, 30, 0.2)100%), url("../images/portfolio3.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+}
+/* .showcase h1{
+    
+} */
+.divider{
+    width: 10%;
+    color: #2e345c;
+    border: 3px solid #2e345c;
+}
+.showcase .readmore{
+    background: #2e345c;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #2e345c;
+    padding: 3% 5% !important;
+}
+.showcase .readmore:hover{
+    background: #fff;
+    color: #2e345c !important;
+}
+.showcase p{
+    color: #fff !important;
+}
+/* about */
+.about-section {
+    padding: 8rem 0;
+    background: #fff !important;
+    color: #000 !important;
+    height: 10% !important;
+}
+.about-section .btn{
+    padding: 1.5% 3%;
+    background: #fff;
+    color: #2e345c !important;
+    border: 1px solid #2e345c;
+    font-weight: bold;
+}
+.about-section .btn:hover{
+    background: #2e345c;
+    color: #fff !important;
+    border: 1px solid #2e345c;
+}
+.about-section .txt, .portfolio .txt{
+    color: #2e345c !important;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+/* services */
+.services-section{
+    padding: 7rem 0;
+    color: #fff;
+    background: #2e345c;
+}
+.services-section .divider{
+    color: #fff !important;
+    border: 3px solid #fff !important;
+}
+.services-section h2{
+    font-size: 2.3rem;
+}
+
+/* portfolio */
+.portfolio-box{
+    display: block;
+    position: relative;
+}
+.portfolio-box-caption{
+    height: 100%;
+    width: 100%;
+    background: #2e345cb7;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.25s;
+    opacity: 0;
+}
+.portfolio-box:hover .portfolio-box-caption{
+    opacity: 1;
+}
+.portfolio-name{
+    text-transform: uppercase;
+    font-size: 0.86rem;
+    font-weight: bold;
+}
+.portfolio-category{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* /portfolio */
+
+/* newsletter */
+.newsletter-section{
+    padding: 8rem 0;
+    background: #2e345c;
+}
+.newsletter-section h2{
+    color: #fff;
+    font-weight: bold;
+}
+.newsletter-section .divider{
+    border: 3px solid #fff;
+    color: #fff;
+}
+.newsletter-section #showForm{
+    width: 50%;
+}
+.newsletter-section form{
+    display: none;
+}
+.newsletter-section form .emailInput{
+    background: #fff;
+}
+.newsletter-section form .emailInput input{
+    outline: none;
+    border: none;
+    color: #2e345c;
+}
+.btn{
+    padding: 1.3% 3% !important;
+    color: #2e345c;
+    font-weight: bold;
+}
+/* /newsletter */
+/* /newsletter */
+/* contact */
+.contact-section{
+    padding: 10rem 0 !important;
+    color: #2e345c;
+    background: #fff;
+}
+.contact-section .divider{
+    color: #fff !important;
+    border: 3px solid #fff !important;
+}
+.contact-section h2{
+    font-size: 2.3rem;
+}
+
+@media only screen and (max-width: 600px){
+    .showcase h1{
+        font-size: 1.5rem;
+        width: 100% !important;
+    }
+    .showcase .divider{
+        width: 50%;
+    }
+    .showcase .readmore{
+        padding: 5% 10% !important;
+        background: #2e345c;
+        color: #fff;
+        font-weight: bold;
+        border: 1px solid #2e345c;
+    }
+}
+
+footer{
+    padding: 2rem 0;
+}
+
+/* bact to top */
+/* bact to top */
+#backToTop{
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    cursor: pointer;
+    transform: rotate(270deg);
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    color: #2e345c;
+    background-color: #fff;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    display: none;
+}
+#backToTop:hover{
+    color: #fff;
+    background-color: #2e345c;
+}
